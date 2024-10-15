@@ -1,0 +1,42 @@
+.body{
+    margin: 0 auto;
+}
+.nabarr{
+    background-color: rgba(255, 255, 255, 0.486);
+}
+.video{
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+    position: relative;
+    height: 100vh; /* Hace que el video ocupe el 100% de la pantalla */
+    overflow: hidden;
+}
+
+.video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que el video cubra todo el área */
+    z-index: -1; /* El video queda detrás del texto */
+}
+
+/* Estilo del texto que aparece encima del video */
+.video h3,
+.video p {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.video h3 {
+    font-size: 4rem;
+    margin-top: 20%;
+}
+
+.video p {
+    font-size: 1.5rem;
+}
